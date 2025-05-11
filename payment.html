@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hungry Me - Payment Page</title>
+    <link rel="icon" href="Images/title bar icon.png" type="image/x-icon">
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            background-color: #ff2a58;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        .payment-container {
+            margin: 50px auto;
+            max-width: 500px;
+            padding: 30px;
+            background: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+        }
+
+        .payment-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .payment-form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .payment-form label {
+            margin: 10px 0 5px;
+            font-size: 16px;
+            color: #333;
+        }
+
+        .payment-form input {
+            padding: 10px;
+            margin: 10px 0;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+
+        .payment-form button {
+            background: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .payment-form button:hover {
+            background: #0056b3;
+        }
+
+        .back-button {
+            display: block;
+            margin: 20px auto;
+            text-align: center;
+            font-size: 16px;
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .back-button:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 550px) {
+            .header {
+                padding: 20px;
+            }
+
+            .header h1 {
+                font-size: 25px;
+            }
+
+            .payment-container {
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1>Payment Details</h1>
+    </div>
+
+    <div class="payment-container">
+        <h2>Complete Your Payment</h2>
+        <form class="payment-form">
+            <label for="cardNumber">Card Number</label>
+            <input type="text" id="cardNumber" name="cardNumber" placeholder="Enter your card number" required>
+
+            <label for="expiryDate">Expiry Date</label>
+            <input type="text" id="expiryDate" name="expiryDate" placeholder="MM/YY" required>
+
+            <label for="cvv">CVV</label>
+            <input type="text" id="cvv" name="cvv" placeholder="Enter CVV" required>
+
+            <button type="submit">Pay Now</button>
+        </form>
+        <a href="cart.html" class="back-button">Back to Cart</a>
+    </div>
+</body>
+
+</html>
